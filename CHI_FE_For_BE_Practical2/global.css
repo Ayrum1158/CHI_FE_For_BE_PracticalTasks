@@ -1,0 +1,29 @@
+table,td {
+    border: 1pt solid black;
+}
+
+td {
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+}
+
+td:has(> #num_field) {
+    height: 5vh;
+    text-align: center;
+}
+
+td:has(#clear_btn) {
+    height: 50vh;
+}
+
+td > button {
+    height: 100%;
+    width: 100%
+}
+
+#num_field {
+    text-align: right;
+    height: 100%;
+    padding-right: 2vw;
+}
