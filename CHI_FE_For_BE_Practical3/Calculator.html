@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="global.css">
+    <title>Document</title>
+</head>
+<body>
+    <table >
+        <tr><td colspan = "4"><div id="num_field"></div><!-- <-Numbers box --></td><td rowspan="5"><button id="clear_btn" onclick="clr()">Clear</button><button onclick="save_value()">Save</button><button onclick="load_value()">Load</button></td></tr>
+        <tr><td><button onclick="num_concat(7)">7</button></td><td><button onclick="num_concat(8)">8</button></td><td><button onclick="num_concat(9)">9</button></td><td><button onclick="sign_press('+')">+</button></td></tr><!-- 7 8 9 + clear -->
+        <tr><td><button onclick="num_concat(4)">4</button></td><td><button onclick="num_concat(5)">5</button></td><td><button onclick="num_concat(6)">6</button></td><td><button onclick="sign_press('-')">-</button></td></tr><!-- 4 5 6 - clear -->
+        <tr><td><button onclick="num_concat(1)">1</button></td><td><button onclick="num_concat(2)">2</button></td><td><button onclick="num_concat(3)">3</button></td><td><button onclick="sign_press('*')">*</button></td></tr><!-- 1 2 3 * save -->
+        <tr><td><button onclick="num_concat(0)">0</button></td><td><button onclick="num_concat('.')">.</button></td><td><button onclick="enter()">=</button></td><td><button onclick="sign_press('/')">/</button></td></tr>    <!-- 0 . = / load -->
+    </table>
+
+    <script src="calc.js"></script>
+</body>
+</html>
